@@ -17,9 +17,9 @@ Import-Module OSD -Force
 
 #Start OSDCloud ZTI the RIGHT way
 Write-Host  -ForegroundColor Green "Start OSDCloud"
-#Start-OSDCloud -OSLanguage en-us -OSBuild "21H1" -OSEdition Pro -ZTI
+Start-OSDCloud -OSLanguage en-us -OSBuild "21H1" -OSEdition Pro -ZTI
 #Set-WindowsProductKey -Path "C:\OSDCLoud\OS" -ProductKey ""
-Start-OSDCloud -ImageFileUrl "https://www.bergeysparts.com/osdcloud/WIN10.wim" -ImageIndex 3
+#Start-OSDCloud -ImageFileUrl "https://www.bergeysparts.com/osdcloud/WIN10.wim" -ImageIndex 3
 #Restart from WinPE
 Write-Host  -ForegroundColor Green "Restarting in 20 seconds!"
 Start-Sleep -Seconds 20
